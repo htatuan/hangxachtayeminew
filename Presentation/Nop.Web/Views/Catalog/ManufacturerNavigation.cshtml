@@ -1,0 +1,37 @@
+﻿@model ManufacturerNavigationModel
+@using Nop.Web.Models.Catalog;
+@if (Model.Manufacturers.Count > 0)
+{
+    <div class="block block-manufacturer-navigation">
+        <div class="title" style="border:none;background-color:#7cbf42;color:white; ">
+            <strong>@T("Manufacturers")</strong>
+        </div>
+        <div class="listbox" style="padding:0;">
+            <ul class="list  ul-parent">
+                @{var index = 1;}
+                @foreach (var manufacturer in Model.Manufacturers)
+                {
+                    if (index == Model.Manufacturers.Count)
+                    {
+                        <li class="@(manufacturer.IsActive ? "active" : "inactive")" style="border-bottom: 1px solid #7cbf42">
+                            <a href="@Url.RouteUrl("Manufacturer", new { SeName = manufacturer.SeName })">@manufacturer.Name </a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="@(manufacturer.IsActive ? "active" : "inactive")">
+                            <a href="@Url.RouteUrl("Manufacturer", new { SeName = manufacturer.SeName })">@manufacturer.Name </a>
+                        </li>
+                    }
+                    index++;
+                }
+            </ul>
+            @if (Model.TotalManufacturers > Model.Manufacturers.Count)
+            {
+                <div class="view-all">
+                    <a href="@Url.RouteUrl("ManufacturerList")">@T("Manufacturers.ViewAll")</a>
+                </div>
+            }
+        </div>
+    </div>
+}

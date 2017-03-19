@@ -1,0 +1,8 @@
+Group: Widgets
+FriendlyName: Bs nopStation Live Chat
+SystemName: Widgets.BsLiveChat
+Version: 1.20
+SupportedVersions: 3.70
+Author: brainstation-23 team, Md. Minul Islam Sohel
+DisplayOrder: 1
+FileName: Nop.Plugin.Widgets.BsLiveChat.dll

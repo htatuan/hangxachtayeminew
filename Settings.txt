@@ -1,0 +1,2 @@
+DataProvider: sqlserver
+DataConnectionString: Data Source=112.78.2.80;Initial Catalog=HOB3BAA_emiDB;Integrated Security=False;Persist Security Info=False;User ID=HOB3BAA_hangxachtayemi;Password=@hangxachtayemi123

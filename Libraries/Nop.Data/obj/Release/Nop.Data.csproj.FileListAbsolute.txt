@@ -1,0 +1,70 @@
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\Nop.Data.dll.config
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\Nop.Data.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\Nop.Data.pdb
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\EntityFramework.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\EntityFramework.SqlServer.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\EntityFramework.SqlServerCompact.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\Nop.Core.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\System.Data.SqlServerCe.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\Autofac.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\StackExchange.Redis.StrongName.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\Autofac.Integration.Mvc.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\System.Web.Mvc.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\Newtonsoft.Json.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\System.Web.Razor.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\System.Web.WebPages.Razor.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\System.Web.WebPages.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\Nop.Core.pdb
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\EntityFramework.xml
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\EntityFramework.SqlServer.xml
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\EntityFramework.SqlServerCompact.xml
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\Autofac.xml
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\StackExchange.Redis.StrongName.pdb
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\StackExchange.Redis.StrongName.xml
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\Autofac.Integration.Mvc.xml
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\System.Web.Mvc.xml
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\Newtonsoft.Json.xml
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\System.Web.Razor.xml
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\System.Web.WebPages.Razor.xml
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\System.Web.WebPages.xml
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\obj\Release\Nop.Data.csprojResolveAssemblyReference.cache
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\obj\Release\Nop.Data.dll
+D:\Hang Xach Tay Emi\Libraries\Nop.Data\obj\Release\Nop.Data.pdb
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\Nop.Data.dll.config
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\Nop.Data.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\Nop.Data.pdb
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\EntityFramework.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\EntityFramework.SqlServer.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\EntityFramework.SqlServerCompact.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\Nop.Core.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\System.Data.SqlServerCe.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\Autofac.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\StackExchange.Redis.StrongName.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\Autofac.Integration.Mvc.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\System.Web.Mvc.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\Newtonsoft.Json.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\System.Web.Razor.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\System.Web.WebPages.Razor.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\System.Web.WebPages.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\System.Web.WebPages.Deployment.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\Nop.Core.pdb
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\EntityFramework.xml
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\EntityFramework.SqlServer.xml
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\EntityFramework.SqlServerCompact.xml
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\Autofac.xml
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\StackExchange.Redis.StrongName.pdb
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\StackExchange.Redis.StrongName.xml
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\Autofac.Integration.Mvc.xml
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\System.Web.Mvc.xml
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\Newtonsoft.Json.xml
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\System.Web.Razor.xml
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\System.Web.WebPages.Razor.xml
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\System.Web.WebPages.xml
+D:\HangXachTayEmiNew\Libraries\Nop.Data\bin\Release\System.Web.WebPages.Deployment.xml
+D:\HangXachTayEmiNew\Libraries\Nop.Data\obj\Release\Nop.Data.csprojResolveAssemblyReference.cache
+D:\HangXachTayEmiNew\Libraries\Nop.Data\obj\Release\Nop.Data.dll
+D:\HangXachTayEmiNew\Libraries\Nop.Data\obj\Release\Nop.Data.pdb

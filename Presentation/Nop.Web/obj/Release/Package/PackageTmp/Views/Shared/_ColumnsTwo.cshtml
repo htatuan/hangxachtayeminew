@@ -1,0 +1,210 @@
+﻿@{
+    Layout = "~/Views/Shared/_Root.cshtml";
+}
+@{
+    //current category ID
+    int currentCategoryId = 0;
+    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("catalog", StringComparison.InvariantCultureIgnoreCase) &&
+        Url.RequestContext.RouteData.Values["action"].ToString().Equals("category", StringComparison.InvariantCultureIgnoreCase))
+    {
+        currentCategoryId = Convert.ToInt32(Url.RequestContext.RouteData.Values["categoryId"].ToString());
+    }
+
+
+    //current manufacturer ID
+    int currentManufacturerId = 0;
+    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("catalog", StringComparison.InvariantCultureIgnoreCase) &&
+        Url.RequestContext.RouteData.Values["action"].ToString().Equals("manufacturer", StringComparison.InvariantCultureIgnoreCase))
+    {
+        currentManufacturerId = Convert.ToInt32(Url.RequestContext.RouteData.Values["manufacturerId"].ToString());
+    }
+
+
+    //current product ID
+    int currentProductId = 0;
+    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("product", StringComparison.InvariantCultureIgnoreCase) &&
+        Url.RequestContext.RouteData.Values["action"].ToString().Equals("productdetails", StringComparison.InvariantCultureIgnoreCase))
+    {
+        currentProductId = Convert.ToInt32(Url.RequestContext.RouteData.Values["productId"].ToString());
+    }
+}
+@if (IsSectionDefined("Breadcrumb"))
+{
+    @section Breadcrumb {
+        @RenderSection("Breadcrumb")
+    } 
+}
+<div class="side-2">
+    @if (IsSectionDefined("left"))
+    {
+        @RenderSection("left")
+    }
+    else
+    {
+        @Html.Widget("left_side_column_before")
+        @Html.Action("CategoryNavigation", "Catalog", new { currentCategoryId = currentCategoryId, currentProductId = currentProductId })
+        @Html.Widget("left_side_column_after_category_navigation")
+        @Html.Action("ManufacturerNavigation", "Catalog", new { currentManufacturerId = currentManufacturerId })
+        @Html.Action("VendorNavigation", "Catalog")
+        @Html.Action("RecentlyViewedProductsBlock", "Product", new { productThumbPictureSize = 64 })
+        @Html.Action("PopularProductTags", "Catalog")
+        @Html.Action("PollBlock", "Poll", new { systemKeyword = "LeftColumnPoll" })
+        @Html.Widget("left_side_column_after")
+    }
+</div>
+<div class="center-2">
+    @Html.Widget("main_column_before")
+    @RenderBody()
+    @Html.Widget("main_column_after")
+</div>
+<div id="wpcp-error-message" class="msgmsg-box-wpcp warning-wpcp hideme"><span>error: </span>Content is protected !!</div>
+<style type="text/css">
+    #wpcp-error-message {
+        direction: ltr;
+        text-align: center;
+        transition: opacity 900ms ease 0s;
+        z-index: 99999999;
+    }
+
+    .hideme {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .showme {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .msgmsg-box-wpcp {
+        border-radius: 10px;
+        color: #555;
+        font-family: Tahoma;
+        font-size: 11px;
+        margin: 10px;
+        padding: 10px 36px;
+        position: fixed;
+        width: 255px;
+        top: 50%;
+        left: 50%;
+        margin-top: -10px;
+        margin-left: -130px;
+        -webkit-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+        -moz-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+        box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+    }
+
+        .msgmsg-box-wpcp span {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+    .error-wpcp {
+        background: #ffecec url('http://myphamxachtayduc.vn/wp-content/plugins/wp-content-copy-protector/images/error.png') no-repeat 10px 50%;
+        border: 1px solid #f5aca6;
+    }
+
+    .success {
+        background: #e9ffd9 url('http://myphamxachtayduc.vn/wp-content/plugins/wp-content-copy-protector/images/success.png') no-repeat 10px 50%;
+        border: 1px solid #a6ca8a;
+    }
+
+    .warning-wpcp {
+        background: #ffecec url('http://myphamxachtayduc.vn/wp-content/plugins/wp-content-copy-protector/images/warning.png') no-repeat 10px 50%;
+        border: 1px solid #f5aca6;
+    }
+
+    .notice {
+        background: #e3f7fc url('http://myphamxachtayduc.vn/wp-content/plugins/wp-content-copy-protector/images/notice.png') no-repeat 10px 50%;
+        border: 1px solid #8ed9f6;
+    }
+</style>
+<script>
+    var image_save_msg = 'You Can Not Save images!';
+    var no_menu_msg = 'Context Menu disabled!';
+    var smessage = "Content is protected !!";
+    var timeout_result;
+	function show_wpcp_message(smessage)
+	{
+		if (smessage !== "")
+			{
+			var smessage_text = '<span>Alert: </span>'+smessage;
+			document.getElementById("wpcp-error-message").innerHTML = smessage_text;
+			document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp showme";
+			clearTimeout(timeout_result);
+			timeout_result = setTimeout(hide_message, 3000);
+			}
+	}
+	function hide_message()
+	{
+		document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
+	}
+
+	function disableEnterKey(e) {
+	    if (e.ctrlKey) {
+	        var key;
+	        if (window.event)
+	            key = window.event.keyCode;     //IE
+	        else
+	            key = e.which;     //firefox (97)
+	        //if (key != 17) alert(key);
+	        if (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85 || key == 86 || key == 83 || key == 43) {
+	            show_wpcp_message('You are not allowed to copy content or view source');
+	            return false;
+	        } else
+	            return true;
+	    }
+	}
+
+	function disable_copy(e) {
+	    var elemtype = e.target.nodeName;
+	    var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+	    elemtype = elemtype.toUpperCase();
+	    var checker_IMG = '';
+	    if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) { show_wpcp_message(alertMsg_IMG); return false; }
+	    if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED") {
+	        if (smessage !== "" && e.detail == 2)
+	            show_wpcp_message(smessage);
+
+	        if (isSafari)
+	            return true;
+	        else
+	            return false;
+	    }
+	}
+	function disable_copy_ie() {
+	    var elemtype = window.event.srcElement.nodeName;
+	    elemtype = elemtype.toUpperCase();
+	    if (elemtype == "IMG") { show_wpcp_message(alertMsg_IMG); return false; }
+	    if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED") {
+	        //alert(navigator.userAgent.indexOf('MSIE'));
+	        //if (smessage !== "") show_wpcp_message(smessage);
+	        return false;
+	    }
+	}
+	function reEnable() {
+	    return true;
+	}
+	document.onkeydown = disableEnterKey;
+	document.onselectstart = disable_copy_ie;
+	if (navigator.userAgent.indexOf('MSIE') == -1) {
+	    document.onmousedown = disable_copy;
+	    document.onclick = reEnable;
+	}
+	function disableSelection(target) {
+	    //For IE This code will work
+	    if (typeof target.onselectstart != "undefined")
+	        target.onselectstart = disable_copy_ie;
+
+	        //For Firefox This code will work
+	    else if (typeof target.style.MozUserSelect != "undefined")
+	    { target.style.MozUserSelect = "none"; }
+
+	        //All other  (ie: Opera) This code will work
+	    else
+	        target.onmousedown = function () { return false }
+	    target.style.cursor = "default";
+	}
+	//Calling the JS function directly just after body load
+	window.onload = function () { disableSelection(document.body); };
+</script>
