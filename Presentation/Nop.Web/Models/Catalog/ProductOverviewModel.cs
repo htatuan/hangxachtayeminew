@@ -15,7 +15,10 @@ namespace Nop.Web.Models.Catalog
             ReviewOverviewModel = new ProductReviewOverviewModel();
         }
 
-        public string Name { get; set; }
+        public string Name
+        {
+            get;set;        }
+
         public string ShortDescription { get; set; }
         public string FullDescription { get; set; }
         public string SeName { get; set; }
@@ -31,7 +34,7 @@ namespace Nop.Web.Models.Catalog
         //price
         public ProductReviewOverviewModel ReviewOverviewModel { get; set; }
 
-		#region Nested Classes
+        #region Nested Classes
 
         public partial class ProductPriceModel : BaseNopModel
         {
@@ -56,6 +59,6 @@ namespace Nop.Web.Models.Catalog
             public bool DisplayTaxShippingInfo { get; set; }
         }
 
-		#endregion
+        #endregion
     }
 }

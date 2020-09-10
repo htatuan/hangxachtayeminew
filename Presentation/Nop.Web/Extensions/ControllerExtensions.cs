@@ -105,7 +105,7 @@ namespace Nop.Web.Extensions
                         (!product.MarkAsNewStartDateTimeUtc.HasValue || product.MarkAsNewStartDateTimeUtc.Value < DateTime.UtcNow) &&
                         (!product.MarkAsNewEndDateTimeUtc.HasValue || product.MarkAsNewEndDateTimeUtc.Value > DateTime.UtcNow)
                 };
-                //price
+                
                 if (preparePriceModel)
                 {
                     #region Prepare product price
@@ -348,7 +348,7 @@ namespace Nop.Web.Extensions
                         pictureModel.AlternateText = (picture != null && !string.IsNullOrEmpty(picture.AltAttribute)) ?
                             picture.AltAttribute :
                             string.Format(localizationService.GetResource("Media.Product.ImageAlternateTextFormat"), model.Name);
-                        
+
                         return pictureModel;
                     });
 
